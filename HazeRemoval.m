@@ -1,6 +1,7 @@
 clf;
 clear;
-img = imread('tree.jpg');
+img = imread('haze.jpg');
+img = imresize(img, 0.2);
 [x, y, ~] = size(img);
 img = imresize(img, [x / 2, y / 2]);
 figure();
